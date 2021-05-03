@@ -1,0 +1,39 @@
+* {
+    color: rgb(184, 200, 228);
+  
+}
+a {
+    color: darkturquoise;
+}
+span {
+    color: rgb(96, 104, 238);
+}
+.header {
+    background-color: rgb(193, 26, 42);
+    justify-content: space-between;
+    padding: 10px;
+    margin:8px;
+    border-radius: 8px;
+}
+
+.left_menu {
+    background-color: rgb(34, 106, 121);
+    padding: 10px;
+    margin:10px;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+.right_menu {
+    background-color: rgb(13, 18, 26);
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px;
+    width: 73%;
+}
+.footer {
+    background-color: rgb(75, 82, 96);
+    padding: 10px;
+    margin:8px;
+    border-radius: 8px;
+}

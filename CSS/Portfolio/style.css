@@ -1,0 +1,71 @@
+.header {
+    background-image: linear-gradient(to top left, rgba(255,0,0,0), rgba(242, 242, 242));
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.img_div {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(179, 179, 179);
+    width: 550px; 
+    height: 340px;
+    display: inline-block;
+}
+#grad {
+    background-image: linear-gradient(rgb(158,158,158), rgb(118,118,130), rgb(158,158,158));
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+#grad2 {
+    display: flex;
+    margin-left: 15px;
+}
+.about {
+    display: inline-block;
+    width: 50%;
+    margin: 10px;
+    padding-bottom: 20px;
+    vertical-align: top;
+    height: 340px;
+    display: inline-block;
+    background-image: linear-gradient(to left,rgb(208, 190, 208), rgb(255,255,255));
+}
+.card {
+    display: inline-block;
+    margin: 10px;
+    max-width: 397px;
+    display: inline-block;
+    background-image: linear-gradient(to left,rgb(208, 190, 208), rgb(255,255,255));
+}
+.card img {
+    width: 397px;
+    height: 230px;
+}
+#icons {
+    margin: 9px;
+    width: 53px;
+    height: 53px;
+}
+#buttons {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 10px;
+    border-color: black;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+.footer {
+    background-image: linear-gradient(to top left, rgba(255,0,0,0), rgba(242, 242, 242));
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+}

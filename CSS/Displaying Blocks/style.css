@@ -1,0 +1,38 @@
+div	{
+	display:inline-block;
+}
+h1{
+	display:inline-block;
+}
+img {
+	width: 100px;
+}
+.Main_div {
+    position: absolute;
+    left:250px;
+	width: 800px;
+	background-color: #d3d1ad;
+}
+.header_div {
+	width: 510px;
+	margin:0 auto;
+	display:block;
+}
+
+.body_div {
+	margin: 0 auto;
+	width: 710px;
+	display:block;
+}
+.blue {
+	background-color:  #82b3ed;
+    border: 3px solid black;
+	padding:15px 15px 15px 15px;
+	margin:1px;
+}
+.red {
+	background-color: #f3696f;
+    border: 3px solid black;
+	padding:15px 15px 15px 15px;
+	margin:1px;
+}

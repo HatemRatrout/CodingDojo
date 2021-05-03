@@ -1,0 +1,72 @@
+1.
+
+select countries.name,languages.language, languages.percentage from world.countries 
+join world.languages where languages.country_id=countries.id and languages.language = "Slovene" 
+order by languages.percentage desc;
+
+-----------------------------------------------------------------------------------------------
+
+2.
+
+use world;
+select countries.name, COUNT(cities.id) as Number_of_cities
+from countries
+join cities on countries.id = cities.country_id
+GROUP BY countries.id
+ORDER BY COUNT(cities.id) desc;
+
+-----------------------------------------------------------------------------------------------
+
+3.
+
+select cities.name, cities.population 
+from cities 
+join countries on cities.country_id = countries.id
+where countries.name = 'Mexico' and cities.population > 500000
+ORDER BY cities.population desc;
+
+-----------------------------------------------------------------------------------------------
+
+4.
+
+select countries.name,languages.language, languages.percentage 
+from languages
+join countries on countries.id = languages.country_id
+where languages.percentage > 89.0
+order by languages.percentage desc;
+
+-----------------------------------------------------------------------------------------------
+
+5.
+
+select countries.name
+from countries
+where countries.population > 100000 and countries.surface_area < 501;
+
+-----------------------------------------------------------------------------------------------
+
+6.
+
+select countries.name
+from countries
+where countries.capital > 200 and countries.government_form = 'Constitutional Monarchy' and countries.life_expectancy > 75;
+
+-----------------------------------------------------------------------------------------------
+
+7.
+
+select countries.name, cities.name, cities.district, cities.population
+from countries 
+join cities on cities.country_id = countries.id
+where countries.name = 'Argentina' 
+and cities.population > 500000
+and cities.district = 'Buenos Aires';
+
+-----------------------------------------------------------------------------------------------
+
+8.
+
+select countries.region, COUNT(countries.id) as countries_number
+from countries 
+GROUP BY (countries.region)
+ORDER BY countries_number desc;
