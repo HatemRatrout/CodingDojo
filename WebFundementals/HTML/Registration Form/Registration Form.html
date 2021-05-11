@@ -1,0 +1,89 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>My Registration Form</h3>
+    <br>
+    <form>
+
+        <table align="cleft">
+
+            <!----- First Name ----->
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="First_Name" maxlength="20" />
+
+                </td>
+            </tr>
+
+            <!----- Last Name ----->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="Last_Name" maxlength="20" />
+
+                </td>
+            </tr>
+
+            <!----- Email ----->
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="Email" maxlength="200" /></td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="birthday">Birthday:</label>
+                </td>
+                <td>
+                    <input type="date" id="birthday" name="birthday">
+                </td>
+            </tr>
+
+            <!----- Course ----->
+            <tr>
+                <td>
+
+                    <input type="radio" value="Male">
+                    Male
+                    <input type="radio" value="Female">
+                    Female
+                    <input type="radio" value="Other">
+                    Other
+
+                </td>
+            </tr>
+
+
+            <td>
+                <p>A short description about yourself:</p>
+                <textarea rows="3" cols="30"></textarea>
+            </td>
+
+            <tr>
+                <td>
+                    <label for="cars">Favorite Language:</label>
+                    <select name="cars" id="cars">
+                        <option value="Javascript">Javascript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+
+                    </select>
+            </tr>
+            </td>
+            <!----- Submit ----->
+            <tr>
+
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>

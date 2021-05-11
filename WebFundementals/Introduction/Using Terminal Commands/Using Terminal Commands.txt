@@ -1,0 +1,35 @@
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop
+$ cd test
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ touch index.html
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ touch style.css
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ touch commands.txt
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ cp index.html index_2.html
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ cd ..
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop
+$ mkdir destination
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop
+$ cd test
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ mv index_2.html ../destination
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ rm style.css
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop/test
+$ cd ..
+
+Hatem@DESKTOP-19U5IAO MINGW64 ~/Desktop
+$ rm -rf destination
