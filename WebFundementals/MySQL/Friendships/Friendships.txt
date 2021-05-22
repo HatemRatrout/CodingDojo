@@ -1,0 +1,56 @@
+//1.
+use friendships;
+select users.first_name, users.last_name, friend.first_name as f_name, friend.last_name as l_name
+from users join friendships on users.id = friendships.user_id
+join users as friend on friendships.friend_id = friend.id
+where friend.first_name = 'kermit';
+
+
+//2.
+use friendships;
+select count(friendships.id) as no_of_friendships from friendships;
+
+
+//3.
+use friendships;
+select users.first_name, users.last_name, count(friendships.id) as no_of_relations
+from users 
+join friendships on users.id = friendships.user_id
+join users as friend on friendships.friend_id = friend.id
+group by users.id limit 1;
+
+//4.
+insert into users values (6, 'new_user' , 'new_user' , now() , now())
+insert into friendships values (7,6,2, now() , now())
+insert into friendships values (8,6,4, now() , now())
+insert into friendships values (9,6,5, now() , now())
+
+//5.
+select users.first_name, users.last_name, user2.first_name as friend_first_name, user2.last_name as friend_last_name
+from users 
+left join friendships 
+on users.id=friendships.user_id
+left join users as user2 ON  user2.id = friendships.friend_id
+where users.first_name = 'Eli';
+
+//6.
+delete friendships from users 
+left join friendships 
+on users.id=friendships.user_id
+left join users as user2 ON  user2.id = friendships.friend_id
+where users.first_name = 'Eli' and user2.first_name = 'Marky'
+
+
+select users.id, users.first_name, users.last_name, user2.first_name as friend_first_name, user2.last_name as friend_last_name 
+from users 
+join friendships on users.id=friendships.user_id
+left join users as user2 on user2.id = friendships.friend_id
+where users.first_name LIKE 'Eli'
+order by user2.first_name DESC
+
+//7.
+select users.first_name, users.last_name, user2.first_name as friend_first_name, user2.last_name as friend_last_name
+from users 
+left join friendships 
+on users.id=friendships.user_id
+left join users as user2 on user2.id = friendships.friend_id
