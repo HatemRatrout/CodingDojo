@@ -18,7 +18,7 @@ def plus_two():
     session['counter'] += 1
     return redirect('/')
 
-@app.route('/destroy', methods=['POST', 'GET'])
+@app.route('/destroy_session', methods=['POST', 'GET'])
 def destroy():
     session.clear()
     return redirect('/')
