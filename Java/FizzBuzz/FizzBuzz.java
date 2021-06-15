@@ -2,15 +2,15 @@ public class FizzBuzz {
     public static String fizzBuzz(int number) {
         String result = "";
         String NUM = String.valueOf(number);
-        if(number % 3 == 0 && number % 5 != 0)
+        if(number % 3 == 0)
         {
             result = "Fizz";
         }
-        else if (number % 5 == 0 && number % 3 != 0)
+        if (number % 5 == 0)
         {
             result = "Buzz";
         }
-        else if (number % 3 == 0 && number % 5 == 0)
+        if (number % 3 == 0 && number % 5 == 0)
         {
             result = "FizzBuzz";
         }
@@ -24,6 +24,6 @@ public class FizzBuzz {
         System.out.println(fizzBuzz(3));
         System.out.println(fizzBuzz(5));
         System.out.println(fizzBuzz(15));
-        System.out.println(fizzBuzz(2));
+        System.out.println(fizzBuzz(11));
     }
 }
