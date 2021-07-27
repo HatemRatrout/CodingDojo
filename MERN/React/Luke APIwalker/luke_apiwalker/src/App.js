@@ -1,21 +1,16 @@
-import logo from './logo.svg';
-import { Router } from '@reach/router';
+import React, {useState} from 'react';
 import './App.css';
 import Search from './components/Search';
+import Details from './components/Details';
 
 function App() {
+
+  const [element, setElement] = useState({});
+
   return (
-    <div className = "App">
-      <div className="search"> 
-      Search for : 
-      <select name="starwars" id="starwars">
-        <option value="people">People</option>
-        <option value="planets">Planets</option>
-      </select>
-      ID : 
-      <input size="6"></input>
-      <button className="button">Search</button>
-      </div>
+    <div className="App">
+      <Search setElement={setElement}/>
+      <Details element={element}/>
     </div>
   );
 }
