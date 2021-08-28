@@ -4,7 +4,7 @@
 
 
 &nbsp; <br>
-Immersive Full-Stack training program in:
+Immersive Full-Stack training program (bootcamp) in:
 - Web Fundamentals
 - Python Stack (using Django)
 - Java Stack (using Spring Boot)
